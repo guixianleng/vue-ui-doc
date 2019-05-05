@@ -1,0 +1,56 @@
+{
+  "extends": "tslint-config-alloy",
+  "rules": {
+     // 禁止给类的构造函数的参数添加修饰符
+    "no-parameter-properties": false,
+    // 必须使用全等和全不等
+    "triple-equals": true,
+    "semicolon": false,
+    "no-debugger": false,
+    "no-console": false,
+    // 禁止行尾有空格
+    "no-trailing-whitespace": false,
+    "member-ordering": false,
+    // 禁止将 this 赋值给其他变量，除非是解构赋值
+    "no-this-assignment": [true, {
+      "allowed-names": ["^self$", "^that$"],
+      "allow-destructuring": true
+    }],
+    // 必须使用箭头函数，除非是单独的函数声明或是命名函数
+    "only-arrow-functions": [
+      false,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    // 禁止出现空代码块，允许 catch 是空代码块
+    "no-empty": [
+      false,
+      "allow-empty-catch"
+    ],
+    // 禁止无用的类型断言
+    "no-unnecessary-type-assertion": false,
+    // 使用 return; 而不是 return undefined;
+    "return-undefined": false,
+    // 禁止对 array 使用 for in 循环
+    "no-for-in-array": false,
+     // 单行注释格式化规则
+    "comment-format": [false, "check-space"],
+    "linebreak-style": false,
+    // 禁止使用 JSDoc，因为 TypeScirpt 已经包含了大部分功能
+    "no-redundant-jsdoc": false,
+    "ordered-imports": false,
+    // 不允许在项目的package.json中导入未列为依赖项的模块
+    "no-implicit-dependencies": false,
+    "no-import-side-effect": false,
+    "no-magic-numbers": false,
+    "no-parameter-reassignment": false,
+    "no-string-literal": false,
+    // parseInt 必须传入第二个参数
+    "radix": false,
+    "no-invalid-this": false,
+    "no-inferrable-types": false
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}

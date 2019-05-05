@@ -1,0 +1,17 @@
+.pl-month {
+  width: 250px;
+  margin: 10px auto;
+  text-align: center;
+  .el-input {
+    width: 100px
+  }
+  .el-button {
+    padding: 12px 5px
+  }
+  .arrow-left {
+    margin-right: 10px;
+  }
+  .arrow-right {
+    margin-left: 10px;
+  }
+}

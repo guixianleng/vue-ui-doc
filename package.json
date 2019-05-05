@@ -1,0 +1,57 @@
+{
+  "name": "vue-ts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "new:comp": "node ./scripts/generateComponent",
+    "new:view": "node ./scripts/generateView"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.5",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@tinymce/tinymce-vue": "^2.0.0",
+    "@types/axios": "^0.14.0",
+    "@types/js-cookie": "^2.2.2",
+    "@types/tinymce": "^4.5.20",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-typescript": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "compression-webpack-plugin": "^2.0.0",
+    "core-js": "^2.6.5",
+    "js-cookie": "^2.2.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-container": "^2.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "tinymce": "^5.0.4",
+    "tslint-config-alloy": "^0.2.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.4.3",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-cropper": "^0.4.9",
+    "vue-cropperjs": "^3.0.0",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

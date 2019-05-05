@@ -1,0 +1,29 @@
+@import './reset.css';
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #FFF
+}
+
+img {
+  vertical-align: middle;
+}
+
+.tr {
+  text-align: right
+}
